@@ -14,7 +14,7 @@ def speak(audio):
     engine.runAndWait()
 
 
-genai.configure(api_key=os.getenv['API_KEY'])
+genai.configure(api_key=os.getenv('API_KEY'))
 
 generation_config = {
     "temperature": 1,
