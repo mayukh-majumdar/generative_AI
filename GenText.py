@@ -31,8 +31,7 @@ while True:
     prompt = input("Enter prompt.\n")
     response = model.generate_content(prompt)
     print(response.text)
-    with open(f'C:/Users/mayuk/PycharmProjects/Generative AI by MAYUKH/Responses/{prompt}.txt', 'w',
-              encoding='utf-8') as f:
+    with open(f'C:/Users/mayuk/PycharmProjects/Generative AI by MAYUKH/Responses/{prompt}.txt', 'w', encoding='utf-8') as f:
         f.write(response.text)
     speak("Response generated successfully.")
     if not bool(int(input("Enter 0 to exit.\nEnter 1 to continue generating.\n"))):
