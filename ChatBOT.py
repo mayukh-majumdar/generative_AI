@@ -57,6 +57,7 @@ while True:
     convo, prompt = model.start_chat(history=chat_history), input()
     if prompt == 'Refresh':
         chat_history = []
+        speak("Chat history is deleted successfully. You can now have a fresh start.")
         print("Hi,how can I help you today?\nENTER 'Exit' to quit.")
         continue
     elif prompt == 'Exit':
