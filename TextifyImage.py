@@ -27,8 +27,7 @@ elif datetime.datetime.now().hour < 18:
     speak("Good Afternoon!")
 else:
     speak("Good Evening!")
-speak("Myself Textify Image, an AI Image to text converter developed by MAYUKH MAJUMDAR. Please let me know how I can "
-      "help you.")
+speak("Myself Textify Image, an AI Image to text converter developed by MAYUKH MAJUMDAR. Please let me know how I can help you.")
 img = PIL.Image.open(Path(input("Enter the path to image.")))
 response = model.generate_content([input("Enter prompt based on which response will be generated."), img], stream=True)
 response.resolve()
