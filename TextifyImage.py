@@ -5,6 +5,10 @@ import google.generativeai as genai
 import pyttsx3
 from pathlib import Path
 
+from dotenv import load_dotenv
+from pathlib import Path
+load_dotenv(Path(".env"))
+
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[0].id)

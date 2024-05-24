@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 from pathlib import Path
 load_dotenv(Path(".env"))
 
-
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[0].id)
@@ -38,4 +37,3 @@ while True:
         break
 speak("Thank you! Please visit again.")
 print("Exiting...")
-exit()
